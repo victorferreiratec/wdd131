@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #0A369D;
+    --secondary-color: #4472CA;
+    --accent1-color: #5E7CE2;
+    --accent2-color:#92b4f4;
+}
+
+body {
+    margin:0 auto;
+    padding: 2px;
+    font-family: "Prompt", sans-serif;
+    width: 1500px;
+}
+
+header{
+    display: block;
+    background-color: #0A369D;
+}
+
+h1{
+    color: white;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+/* Navegation of html */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent2-color);
+}
+
+nav a{
+    color:black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+
+/* Main, cards and blocks */
+main{
+    display: grid;
+    grid-template-columns: 2fr 1.1fr;
+    padding: 20px;
+}
+
+/* Card 1 */
+.card-1 {
+    display: grid;
+    border: solid black 1px;
+    border-radius: 21px;
+    margin: 0 auto;
+
+}
+
+.card-1 h2{
+    display: flex;
+    justify-content: center;
+    background-color: #0A369D;
+    font-size: x-large;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-bottom: 6px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* Block within card 1 */
+.block-1{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    justify-items: center;
+    margin: 20px;
+}
+
+.block-1 img{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.about-me {
+    font-size: 20px;
+    margin: 40px 10px 0px 0px;
+}
+
+.state{
+    border-bottom: solid 1px gray;
+    font-size: xx-large;
+}
+
+/* Block 2 within card 1 */
+
+
+.block-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block-2 p{
+    font-size: x-large;
+    padding: 10px;
+}
+.flag{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.flag img {
+    width: 300px;
+}
+
+.flag figcaption {
+    font-size: large;
+    padding-left: 60px;
+}
+
+
+/* Card 2 - Links of Resources */
+.card-2 {
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    border: solid black 1px;
+    border-radius: 20px;
+    margin: 0 4px;
+}
+.card-2 h2{
+    display: flex;
+    justify-content: center;
+    background-color: #0A369D;
+    font-size: x-large;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-bottom: 4px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Organization of links within card 2 */
+
+.resources {
+    padding-top: 90px;
+}
+li{
+    padding-top: 15px;
+}
+li a{
+    display: flex;
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: var(--accent2-color) ;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent2-color);
+    padding: 10px;
+    font-size: x-large;
+}

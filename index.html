@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Victor Hugo Ferreira</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Victor Hugo Ferreira">
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Hugo Ferreira</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/myscripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Victor Hugo Ferreira</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span id="name"></span></h1>
+        <nav>
+            <a href="www.linkedin.com/in/victor-hugo-ferreira-3031012a7">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
+            <a href="#">Final project</a>
+        </nav>
+    </header>
+   <main>
+    <section class="card-1">
+        <h2>About me</h2>
+        <div class="block-1">
+            <p class="about-me">My name is Victor Hugo Dos Santos Ferreira, i'm from Sergipe, Brazil. 
+                I like watching movies with my wife, I love going to the beach 
+                and I really like sports, especially football and volleyball.
+                I served in the Brazil São Paulo North mission, which was an incredible moment in my life.
+                I hope to develop and grow professionally.</p>
+            <img src="images/profile.jpg" alt="photo">
+            <p class="state">Sergipe | Brazil</p>
+        </div>
+        <div class="block-2">
+            <figure class="flag">
+                <img src="images/flag_brazil.jpg" alt="flag_brazil">
+                <figcaption>Official flag of brazil</figcaption>
+            </figure>
+            <p>Brazil is the most populous country in South America and the sixth most 
+                populous in the world. According to data from the Brazilian Institute of Geography and Statistics (IBGE) for 2021, 
+                the country has 213,317,639 inhabitants.</p>
+        </div>
+    </section>
+    <section class="card-2">
+        <h2>Web Dev Resources</h2>
+        <div>
+            <ul class="resources">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Sandbox</a></li>
+                <li><a href="#">References</a></li>
+                <li><a href="#">131 Project</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </section>
+   </main>
+   <footer>
+    <p>©2025 🌴 Victor Hugo Dos Santos Ferreira 🌴 Brazil</p>
+    <span id="currentyear"></span>
+    <p id="lastModified"></p>
+   </footer>
 </body>
 </html>
