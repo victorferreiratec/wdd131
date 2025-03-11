@@ -37,22 +37,25 @@ body {
 /* Navegation of html */
 nav{
     display: flex;
-    justify-content: space-around;
     background-color: var(--accent2-color);
 }
 
-nav a{
+nav a,
+nav a:visited {
     color:black;
     font-size: xx-large;
+    flex: 1 1 100%;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
+    color: #fff;
+    background-color: var(--brown);
     font-weight: 600;
-    background-color: var(--primary-color);;
-    color: #000;
-}
-
+  }
 
 /* Main, cards and blocks */
 main{
