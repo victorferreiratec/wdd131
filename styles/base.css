@@ -1,9 +1,6 @@
 *{
     margin: 0;
-    padding: 0 auto;
-    box-sizing: border-box;
 }
-
 
 :root {
     --primary-color: #0A369D;
@@ -12,23 +9,29 @@
     --accent2-color:#92b4f4;
 }
 
-body {
-    margin:0 auto;
-    padding: 2px;
-    font-family: "Prompt", sans-serif;
-    width: 1500px;
-}
-
 header{
-    display: block;
-    background-color: #0A369D;
+
+    background-color: var(--primary-color);
 }
 
 h1{
-    color: white;
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
+  background-color: var(--primary-color);
+  font-size: 45px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Prompt", sans-serif;
 }
 
 /* Navegation of html */
@@ -40,21 +43,25 @@ nav{
 
 nav a{
     color:black;
-    font-size: x-large;
+    font-size: xx-large;
     text-decoration: none;
 }
 
 nav a:hover{
-    text-decoration: underline;
-    color: var(--primary-color);
+    font-weight: 600;
+    background-color: var(--primary-color);;
+    color: #000;
 }
 
 
 /* Main, cards and blocks */
 main{
+    max-width: 1600px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1.1fr;
-    padding: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
 }
 
 /* Card 1 */
@@ -62,8 +69,6 @@ main{
     display: grid;
     border: solid black 1px;
     border-radius: 21px;
-    margin: 0 auto;
-
 }
 
 .card-1 h2{
@@ -87,12 +92,14 @@ main{
 }
 
 .block-1 img{
-    width: 200px;
+    width: 250px;
+    height: auto;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .about-me {
-    font-size: 20px;
+    font-size: 23px;
     margin: 40px 10px 0px 0px;
 }
 
@@ -150,11 +157,12 @@ main{
 /* Organization of links within card 2 */
 
 .resources {
-    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
-li{
-    padding-top: 15px;
-}
+
 li a{
     display: flex;
     text-decoration: none;
@@ -168,11 +176,20 @@ li a:hover{
 }
 
 
+.highlight {
+    color: yellow;
+    font-size: smaller;
+}
+  
 /* Footer */
+
 footer{
-    display: flex;
-    justify-content: center;
-    background-color: var(--accent2-color);
-    padding: 10px;
-    font-size: x-large;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: xx-large;
+    color: white;
+}
+footer p {
+    margin: 0;
+    text-align: center;
 }
