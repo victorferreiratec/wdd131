@@ -15,11 +15,6 @@ header{
     padding: 10px;
 }
 
-header, main, footer{
-    max-width:640px auto;
-    margin: 1rem auto;
-}
-
 body{
     font-family:"PT serif", sans-serif;
 }
