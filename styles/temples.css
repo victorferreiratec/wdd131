@@ -63,7 +63,7 @@ main{
 } 
 
 .highlight {
-    color: green;
+    color: rgb(89, 0, 0);
     font-size: smaller;
 }
 
