@@ -1,5 +1,10 @@
-@media screen and (max-width: 1500px)
+@media screen and (max-width: 880px)
 {
+    h1.title{
+        display: block;
+        width: 100%;
+      }
+    
     .links{
         display: none;
         flex-direction: column;
