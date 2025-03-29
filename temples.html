@@ -6,58 +6,67 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Victor Hugo Ferreira">
     <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Prompt&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight">Victor Hugo Ferreira</span></h1>
+        <h1>Temple Album</h1>
         <nav>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
+         <div class="links">
+            <a href="temples.html">Home</a>
+            <a href="#" target="_blank">Old</a>
+            <a href="#" target="_blank">New</a>
+            <a href="#" target="_blank">Large</a>
+            <a href="#" target="_blank">Small</a>
+         </div>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         </nav>
     </header>
     <main>
-        <h1></h1>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
-            <figcaption></figcaption>
-        </figure>
+        <h1 class="home">HOME</h1>
+        <div class="figure-container">
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/200x320/recife-brazil-temple-lds-700207-wallpaper.jpg" alt="Temple_of_Recife">
+                <figcaption>Temple of Recife</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <p><span id="currentYear">©2025 </span>🌴 Victor Hugo Dos Santos Ferreira 🌴 Brazil</p>
