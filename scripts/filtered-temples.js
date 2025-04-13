@@ -67,12 +67,52 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+    {
+      templeName: "Salvador Brazil",
+      location: "Salvador, Bahia, Brazil",
+      dedicated: " 2024, October, 20 ",
+      area: 29963,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/salvador-brazil-temple/salvador-brazil-temple-51668.jpg"
+    },
+    {
+      templeName: "Recife Brazil",
+      location: "Recife, Pernambuco, Brazil",
+      dedicated: "2000, December, 15",
+      area: 37200,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36780.jpg"
+    },
   ];
 
-  createTempleCard();
+  createTempleCard(temples);
 
-function createTempleCard() {
-  temples.forEach(temple => {
+// Event Listeners for Filters
+
+function getYear(dedicationDate) {
+  return parseInt(dedicationDate.split(",")[0].trim());
+}
+
+document.querySelector("#oldTemple").addEventListener("click", () => {
+  createTempleCard(temples.filter(t => getYear(t.dedicated) <= 1900));
+});
+
+document.querySelector("#newTemple").addEventListener("click", () => {
+  createTempleCard(temples.filter(t => getYear(t.dedicated) >= 2000));
+});
+
+document.querySelector("#largeTemple").addEventListener("click", () => {
+  createTempleCard(temples.filter(t => t.area >= 90000));
+});
+
+document.querySelector("#smalltemple").addEventListener("click", () => {
+  createTempleCard(temples.filter(t => t.area <= 10000));
+});
+
+
+function createTempleCard(filterdTemples) {
+  document.querySelector(".grid-container").innerHTML = "";
+  filterdTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
