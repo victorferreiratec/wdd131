@@ -30,7 +30,7 @@ const planningItems = [
     },
   ];
   
-  // Função para criar cada item do grid
+  // Function to create each grid item
   function createGridItem({ image, alt, title, text }) {
     const item = document.createElement("div");
     item.className = "grid-item";
@@ -44,7 +44,7 @@ const planningItems = [
     return item;
   }
   
-  // Inserir os itens na seção #planning
+  // Insert the items in the #planning section
   function populatePlanningSection() {
     const section = document.getElementById("planning");
     const container = document.createElement("div");
@@ -58,5 +58,5 @@ const planningItems = [
     section.appendChild(container);
   }
   
-  // Chamar função ao carregar
+  // Call function on load
   document.addEventListener("DOMContentLoaded", populatePlanningSection);
