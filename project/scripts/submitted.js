@@ -1,5 +1,5 @@
 
-// Carrega receitas do localStorage e exibe
+// Loads recipes from localStorage and displays
 const container = document.getElementById("userRecipesContainer");
 
 function renderUserRecipes() {
