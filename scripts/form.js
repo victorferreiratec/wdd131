@@ -36,27 +36,26 @@ const products = [
   });
 
 
-  // Contador de avaliações
+  // Review counter
 const reviewCounter = document.getElementById('reviewCounter');
 
-// Verificar se já existe um contador no localStorage
+// Check if a meter already exists in localStorage
 if (localStorage.getItem('reviewCount')) {
     reviewCounter.textContent = localStorage.getItem('reviewCount');
   }
 
-  // Atualizar o contador de avaliações quando o formulário for enviado
+  // Update rating counter when form is submitted
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Impede o envio do formulário para testes locais
+  e.preventDefault(); // Prevents submission of form for local testing
 
-  // Atualiza o contador
+  // Update the counter
   let count = parseInt(localStorage.getItem('reviewCount')) || 0;
   count++;
   localStorage.setItem('reviewCount', count);
 
-  // Atualiza o contador na página
+  // Updates the counter on the page
   reviewCounter.textContent = count;
 
-  // Aqui você pode adicionar qualquer ação após o envio, como redirecionamento
-  alert('Review Submitted!'); // Teste visual
+  alert('Review Submitted!');
 });
