@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #92b4f4;
+    --secondary-color: #4472CA;
+    --accent1-color: #0A369D;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+  }
+  
+  header,
+  footer {
+    color: white;
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  form {
+    margin: 1rem auto;
+    border: 5px solid var(--secondary-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    max-width: 500px;
+  }
+  
+  .item {
+    margin-bottom: 1rem;
+  }
+  
+  label,
+  .item p {
+    font-size: .85rem;
+    font-weight: 700;
+  }
+  
+  input[type="text"],
+  input[type="checkbox"],
+  input[type="date"],
+  input[type="radio"],
+  textarea,
+  select {
+    margin-top: .25rem;
+    padding: .5rem;
+    border: 1px solid var(--accent1-color);
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: 1px solid #999;
+  }
+  
+  input[type="checkbox"],
+  [type="radio"] {
+    width: 25px;
+    height: 25px;
+  }
+  
+  input[type="submit"] {
+    font-weight: 700;
+    font-size: larger;
+    width: 100%;
+    padding: .5rem;
+  }
+  
+  textarea {
+    height: 6rem;
+  }
+  
+  .radio-group {
+    margin-top: .25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  
+  
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    width: max-content;
+  }
+  
+  .checkbox-group label {
+    margin-left: .5rem;
+  }
+  
+  .smaller {
+    font-size: .7rem;
+    color: rgb(195, 0, 0);
+  }
+  
+  
+  @media (min-width: 600px) {
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+  }
