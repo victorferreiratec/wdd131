@@ -71,7 +71,7 @@ h1{
     font-size: 33px;
 }
 
-.hero-content {
+.hero-content1 {
     position: absolute;
     top: 15%;
     left: 50%;
@@ -81,6 +81,15 @@ h1{
     width: 80%;
  }
 
+ .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+ }
 .hero{
     height: auto;
     margin: 0;
@@ -187,6 +196,16 @@ footer{
         float: right;
     }
     .hero-content {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        width: 90%;
+     }
+
+    .hero-content1 {
         position: absolute;
         top: 80%;
         left: 50%;
