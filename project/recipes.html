@@ -7,7 +7,7 @@
     <meta name="author" content="Victor Hugo Ferreira">
     <title>Weekend Guide - Recipes</title>
     <link rel="stylesheet" href="styles/recipes.css">
-    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/recipes.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
@@ -25,11 +25,34 @@
         </nav>
     </header>
     <main>
-        <h2 class="recipes">RECIPES</h2>
-        <div class="grid-container">
+        <h2>RECIPES</h2>
+        <div class="container" id="recipesContainer">
         </div>
     </main>
+    <section class="form-section">
+        <h2>Compartilhe sua receita!</h2>
+        <form id="recipeForm">
+          <label for="name">Seu nome:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="recipeName">Nome da receita:</label>
+          <input type="text" id="recipeName" name="recipeName" required>
+      
+          <label for="ingredients">Ingredientes:</label>
+          <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+            
+          <label for="prepare">Modo de Preparo:</label>
+            <textarea id="prepare" name="prepare" rows="4" required></textarea>
+
+          <label for="prepDate">Data do preparo:</label>
+          <input type="date" id="prepDate" name="prepDate" required>
+      
+          <button type="submit">Enviar Receita</button>
+        </form>
+      </section>
     <footer>
         <p><span id="currentYear">©2025 </span>🌴 Victor Hugo Dos Santos Ferreira 🌴 Brazil</p>
         <p class="highlight" id="lastModified">Last Modification : 29/09/2000 10:26pm</p>
    </footer>
+</body>
+</html>

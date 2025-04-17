@@ -36,7 +36,7 @@ const planningItems = [
     item.className = "grid-item";
   
     item.innerHTML = `
-      <img class="planning-img" src="${image}" alt="${alt}" loading="lazy">
+      <img src="${image}" alt="${alt}" loading="lazy">
       <h3>${title}</h3>
       <p>${text}</p>
     `;
