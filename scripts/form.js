@@ -39,11 +39,6 @@ const products = [
   // Review counter
 const reviewCounter = document.getElementById('reviewCounter');
 
-// Check if a meter already exists in localStorage
-if (localStorage.getItem('reviewCount')) {
-    reviewCounter.textContent = localStorage.getItem('reviewCount');
-  }
-
   // Update rating counter when form is submitted
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
