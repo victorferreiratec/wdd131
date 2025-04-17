@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+
+:root {
+    --primary-color:  #4F772D;
+    --secondary-color: #90A955;
+    --accent1-color: #132A13;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--accent1-color);
+    border-top: 5px solid var(--accent1-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+
+}
+
+header img {
+    width:180px;
+    height: auto;
+    border-radius: 30px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:"PT serif", sans-serif;
+}
+
+a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+nav a:hover{
+    background-color: black;
+    border: solid 2px var(--accent1-color);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.highlight {
+    color: rgb(142, 243, 0);
+    font-size: smaller;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: x-large;
+    color: white;
+}
+
+#activity-packages {
+  padding: 20px;
+  text-align: center;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px; /* Espaciamento entre os cards */
+  justify-items: center;
+}
+
+.activity-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.activity-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.activity-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.activity-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trip-card ul li {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media screen and (max-width: 880px)
+{
+      .links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 60px;
+        left: 0;
+        background: var(--primary-color);
+        width: 100%;
+        padding: 10px;
+    }
+    .links.show{
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+    }
+}
