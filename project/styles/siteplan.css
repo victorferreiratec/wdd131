@@ -109,11 +109,16 @@ h2{
 }
 
 footer{
+    display: flex;
     text-align: center;
+    justify-content: space-around;
     background-color: var(--primary-color);
     padding: 1rem;
     font-size: x-large;
     color: white;
+}
+footer a{
+    font-size: x-large;
 }
 
 #call-to-action {
@@ -227,5 +232,8 @@ footer{
     .hero-content a{
         width: 150px;
         font-size: x-large;
+    }
+    footer a{
+        font-size: large;
     }
 }
